@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big + Shoulders + Display:wght@700&family=Lexend+Deca&display=swap');
 
 body {
 	justify-content: center;
@@ -6,8 +6,9 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	padding-top: 2em;
-	font-family: 'Hanken Grotesk', sans-serif;
-	font-size: 18px;
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
 }
 
 .card {
