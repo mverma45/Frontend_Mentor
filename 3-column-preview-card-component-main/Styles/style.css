@@ -3,23 +3,106 @@
 body {
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	min-height: 10em;
 	margin: 0;
 	padding-top: 2em;
 	font-family: 'Hanken Grotesk', sans-serif;
-	font-size: 18px;
+	font-size: 1em;
 }
 
 .cars {
 	display: flex;
-	flex-direction: column;
-	min-width: 300vh;
-	justify-content: center;
-	border-radius: 20px;
+	flex-direction: row;
+	min-width: 22em;
+	/* top | right | bottom | left */
+	margin: 0.01em 4em 2em 4em;
+}
+
+.carsSedan {
+	background: hsl(31, 77%, 52%);
+	border-top-left-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+}
+
+.carsSUV {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.carsLuxury {
+	background-color: hsl(179, 100%, 13%);
+	border-top-right-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+}
+
+.carsSedanPara,
+.carsSUVPara,
+.carsLuxuryPara {
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.carsSedanTitle,
+.carsSUVTitle,
+.carsLuxuryTitle {
+	color: hsl(0, 0%, 95%);
+}
+
+.carsSUVTitle,
+.carsLuxuryTitle {
+	font-size: 2em;
+	font-weight: bolder;
+}
+.carsSedan,
+.carsSUV,
+.carsLuxury {
+	/* top | right | bottom | left */
+	padding: 2em 2em 2em 2em;
+}
+
+.btnSedan {
+	color: hsl(31, 77%, 52%);
+	border: none;
+}
+
+.btnSUV {
+	color: hsl(184, 100%, 22%);
+	border: none;
+}
+
+.btnLuxury {
+	color: hsl(179, 100%, 13%);
+	border: none;
+}
+
+.btnSedan,
+.btnSUV,
+.btnLuxury {
+	border-radius: 2em;
+	/* top | right | bottom | left */
+	padding: 1em 2.2em 1em 2.2em;
+}
+
+@media (max-width: 50rem) {
+	.cars {
+		display: flex;
+		flex-direction: column;
+		padding-right: 5em;
+		min-width: 30em;
+	}
+	.carsSedan {
+		border-radius: 0;
+		border-top-left-radius: 0.5em;
+		border-top-right-radius: 0.5em;
+	}
+
+	.carsLuxury {
+		border-radius: 0;
+		border-bottom-left-radius: 0.5em;
+		border-bottom-right-radius: 0.5em;
+	}
 }
 
 .attribution {
-	font-size: 11px;
+	font-size: 0.75em;
 	text-align: center;
 }
 .attribution a {
