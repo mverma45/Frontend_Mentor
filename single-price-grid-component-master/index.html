@@ -5,7 +5,6 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
 
 		<link
 			rel="icon"
@@ -15,25 +14,39 @@
 
 		<link
 			rel="stylesheet"
-			href="styles.css" />
+			href="./Style/styles.css" />
 
 		<title>Frontend Mentor | Single Price Grid Component</title>
 	</head>
 	<body>
-		<div>
-			Join our community 30-day, hassle-free money back guarantee Gain access to
-			our full library of tutorials along with expert code reviews. Perfect for
-			any developers who are serious about honing their skills.
-		</div>
-		<div>
-			Monthly Subscription &dollar;29 per month Full access for less than
-			&dollar;1 a day Sign Up
-		</div>
-		<div>
-			Why Us Tutorials by industry experts Peer &amp; expert code review Coding
-			exercises Access to our GitHub repos Community forum Flashcard decks New
-			videos every week
-		</div>
+		<main class="hero_main">
+			<div class="hero">
+				<h1 class="priceCard">Join our community</h1>
+				<p class="Plan">30-day, hassle-free money back guarantee</p>
+				<p class="Gain">
+					Gain access to our full library of tutorials along with expert code
+					reviews. Perfect for any developers who are serious about honing their
+					skills.
+				</p>
+			</div>
+			<div class="MPlans">
+				<div class="Pricing">
+					<p class="pricingSub">Monthly Subscription</p>
+					<p class="planAmount">$29 <span class="pMonth">per month</p></span>
+
+					<p class="Access">Full access for less than $1 a day</p>
+					<button class="subBtn">Sign Up</button>
+				</div>
+				<div class="why">
+					<p class="whyAbout">Why Us</p>
+					<p class="whyTut">
+						Tutorials by industry experts Peer &amp; expert code review Coding
+						exercises Access to our GitHub repos Community forum Flashcard decks
+						New videos every week
+					</p>
+				</div>
+			</div>
+		</main>
 		<footer>
 			<p class="attribution">
 				Challenge by
@@ -41,7 +54,7 @@
 					href="https://www.frontendmentor.io?ref=challenge"
 					target="_blank"
 					>Frontend Mentor</a
-				>. Coded by <a href="#">Your Name Here</a>.
+				>. Coded by <a href="#">Manny Verma</a>.
 			</p>
 		</footer>
 	</body>
